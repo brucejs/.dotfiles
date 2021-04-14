@@ -22,3 +22,8 @@ fi
 if [ -f ~/.bash_aliases ]; then
   . ~/.bash_aliases
 fi
+
+# Unlimited Bash history
+HISTSIZE=-1
+HISTFILESIZE=-1
+
