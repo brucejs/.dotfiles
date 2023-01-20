@@ -27,7 +27,14 @@ fi
 HISTSIZE=-1
 HISTFILESIZE=-1
 
+# No duplicate lines or lines starting with space in the history
+HISTCONTROL=ignoreboth:erasedups
+
 # Enable Git prompt script
 if [ -f /usr/share/git/completion/git-prompt.sh ]; then
   . /usr/share/git/completion/git-prompt.sh
 fi
+
+# Configure GPG-AGENT
+GPG_TTY=$(tty)
+export GPG_TTY
