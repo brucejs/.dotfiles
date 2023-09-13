@@ -38,3 +38,10 @@ fi
 # Configure GPG-AGENT
 GPG_TTY=$(tty)
 export GPG_TTY
+
+# Configure ssh-agent
+SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
+export SSH_AUTH_SOCK
+
+# Add ~/.local/bin to PATH
+PATH=~/.local/bin:$PATH
