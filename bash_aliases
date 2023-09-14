@@ -2,6 +2,7 @@
 # ~/.bash_aliases
 #
 alias csv='column -ts,'
+alias fancy='date "+%A, %b %d, %Y"'
 alias g++='g++ -Wall -std=c++14'
 alias glo='git log --oneline'
 alias ish='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
