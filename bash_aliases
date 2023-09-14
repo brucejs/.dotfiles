@@ -3,7 +3,7 @@
 #
 alias csv='column -ts,'
 alias g++='g++ -Wall -std=c++14'
-alias glpo='git log --pretty=oneline'
+alias glo='git log --oneline'
 alias ish='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
 alias l='ls -CF'
 alias la='ls -A'
