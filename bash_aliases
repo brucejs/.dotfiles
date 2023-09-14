@@ -1,6 +1,7 @@
 #
 # ~/.bash_aliases
 #
+alias csv='column -ts,'
 alias g++='g++ -Wall -std=c++14'
 alias glpo='git log --pretty=oneline'
 alias ish='ssh -o StrictHostKeyChecking=no -o UserKnownHostsFile=/dev/null'
