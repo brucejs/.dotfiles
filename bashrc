@@ -39,13 +39,5 @@ fi
 GPG_TTY=$(tty)
 export GPG_TTY
 
-# Configure ssh-agent
-if ! pgrep -u "$USER" ssh-agent > /dev/null; then
-    ssh-agent -t 1h > "$XDG_RUNTIME_DIR/ssh-agent.env"
-fi
-if [[ ! -f "$SSH_AUTH_SOCK" ]]; then
-    source "$XDG_RUNTIME_DIR/ssh-agent.env" >/dev/null
-fi
-
 # Add ~/.local/bin to PATH
 PATH=~/.local/bin:$PATH
