@@ -25,7 +25,7 @@ default_border none
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/wallpapers/arch-triangle.jpg fill
+output * bg ~/Pictures/wallpapers/arch-linux-logo.png fill
 #
 # Example configuration:
 #
@@ -72,6 +72,10 @@ input type:touchpad {
     tap enabled
     natural_scroll enabled
     pointer_accel 0.5
+}
+
+input type:touch {
+    map_to_output DSI-1
 }
 
 ### Key bindings
@@ -218,6 +222,8 @@ bindsym $mod+r mode "resize"
 # Read `man 5 sway-bar` for more information about this section.
 bar {
     position top
+
+    font pango:InconsolataNerdFontMono Regular 18
 
     # When the status_command prints a new line to stdout, swaybar updates.
     # The default just shows the current date and time.

@@ -10,9 +10,9 @@ DATE_FORMATTED=$(date +'%a %Y-%m-%d %H:%M')
 #VOLUME_LEVEL=$(wpctl get-volume @DEFAULT_AUDIO_SINK@)
 
 function set_backlight_icon {
-    if (($BACKLIGHT_LEVEL >= 15360)); then
+    if (($BACKLIGHT_LEVEL >= 512)); then
         backlight_icon='☀️'
-    elif (($BACKLIGHT_LEVEL >= 3840 && $BACKLIGHT_LEVEL < 15360)); then
+    elif (($BACKLIGHT_LEVEL >= 128 && $BACKLIGHT_LEVEL < 512)); then
         backlight_icon='💡'
     else
         backlight_icon='🕯️'
