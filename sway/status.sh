@@ -2,8 +2,8 @@
 set -euo pipefail
 IFS=$'\n\t'
 # icons: ☀️ 💡 📣 🔇 🔈 🔉 🔊 🔋 🔌 🕯️ 🪫
-BATTERY_PERCENTAGE=$(cat /sys/class/power_supply/BAT0/capacity)
-BATTERY_STATUS=$(cat /sys/class/power_supply/BAT0/status)
+BATTERY_PERCENTAGE=$(</sys/class/power_supply/BAT0/capacity)
+BATTERY_STATUS=$(</sys/class/power_supply/BAT0/status)
 BRIGHTNESS_LEVEL=$(brightnessctl get)
 BRIGHTNESS_MAX=$(brightnessctl max)
 BRIGHTNESS_PERCENTAGE=$(awk "BEGIN { print ($BRIGHTNESS_LEVEL/$BRIGHTNESS_MAX) * 100 }")
