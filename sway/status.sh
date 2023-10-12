@@ -7,6 +7,7 @@ BATTERY_STATUS=$(cat /sys/class/power_supply/BAT0/status)
 BRIGHTNESS_LEVEL=$(brightnessctl get)
 BRIGHTNESS_MAX=$(brightnessctl max)
 BRIGHTNESS_PERCENTAGE=$(awk "BEGIN { print ($BRIGHTNESS_LEVEL/$BRIGHTNESS_MAX) * 100 }")
+DATE_FORMATTED=$(date '+%a %b %d')
 WPCTL_OUTPUT=$(wpctl get-volume '@DEFAULT_AUDIO_SINK@')
 VOLUME_PERCENTAGE=$(echo "$WPCTL_OUTPUT" | awk '{ print $2 * 100 }')
 
@@ -50,4 +51,4 @@ set_brightness_icon
 
 set_volume_icon
 
-echo "${VOLUME_PERCENTAGE}%${volume_icon} | ${BRIGHTNESS_PERCENTAGE}%${brightness_icon} | ${BATTERY_PERCENTAGE}%${battery_icon}"
+echo "${DATE_FORMATTED}🗓️ | ${VOLUME_PERCENTAGE}%${volume_icon} | ${BRIGHTNESS_PERCENTAGE}%${brightness_icon} | ${BATTERY_PERCENTAGE}%${battery_icon}"
