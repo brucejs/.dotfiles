@@ -107,6 +107,12 @@ vim.cmd([[
       autocmd FileType html set tabstop=2 shiftwidth=2
     augroup END
 
+    " Sort the selected list of HTML anchor tags by their rendered text, not their href attribute
+    function! SortSelectedAnchorTags()
+      '<,'>sort i /">\zs.\+\ze<\/a>/ r
+    endfunction
+    :vnoremap <Leader>a :call SortSelectedAnchorTags()<CR>
+
     function! TrimWhitespace()
       let l:save = winsaveview()
       %s/\s\+$//e
