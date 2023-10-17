@@ -51,4 +51,4 @@ set_brightness_icon
 
 set_volume_icon
 
-echo "${DATE_FORMATTED}🗓️ | ${VOLUME_PERCENTAGE}%${volume_icon} | ${BRIGHTNESS_PERCENTAGE}%${brightness_icon} | ${BATTERY_PERCENTAGE}%${battery_icon}"
+echo "${VOLUME_PERCENTAGE}%${volume_icon} | ${BRIGHTNESS_PERCENTAGE}%${brightness_icon} | ${BATTERY_PERCENTAGE}%${battery_icon} | ${DATE_FORMATTED} "
