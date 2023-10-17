@@ -31,7 +31,6 @@ require("lazy").setup({
         ensure_installed = { "c", "lua", "vim", "vimdoc", "query" },
         sync_install = false,
         highlight = { enable = true },
-        indent = { enable = true }
       })
     end
   },
@@ -64,7 +63,7 @@ require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
 lsp.setup()
 
 -- nvim Options
-vim.opt.autoindent = false
+vim.opt.autoindent = true
 vim.opt.background = 'dark'
 vim.opt.colorcolumn = '+1'
 vim.opt.compatible = false
@@ -76,6 +75,7 @@ vim.opt.number = true
 vim.opt.scrolloff = 5
 vim.opt.shiftwidth = 4
 vim.opt.smartindent = false
+vim.opt.softtabstop = 4
 vim.opt.tabstop = 4
 vim.opt.textwidth = 79
 vim.opt.wrap = false
