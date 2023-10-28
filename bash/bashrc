@@ -45,3 +45,6 @@ export SSH_AUTH_SOCK
 
 # Add ~/.local/bin to PATH
 PATH=~/.local/bin:$PATH
+
+# Install Haskell toolchain
+[ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
