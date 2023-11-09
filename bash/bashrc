@@ -43,8 +43,12 @@ export GPG_TTY
 SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 export SSH_AUTH_SOCK
 
+# Adjust GOPATH
+GOPATH=$HOME/.go
+export GOPATH
+
 # Add ~/.local/bin to PATH
-PATH=~/.local/bin:$PATH
+PATH=~/.local/bin:$GOPATH/bin:$PATH
 
 # Install Haskell toolchain
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
