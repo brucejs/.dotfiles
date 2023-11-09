@@ -25,7 +25,7 @@ default_border none
 ### Output configuration
 #
 # Default wallpaper (more resolutions are available in /usr/share/backgrounds/sway/)
-output * bg ~/Pictures/wallpapers/arch-linux-logo.png fill
+output * bg ~/Pictures/wallpapers/wallpaper fill
 #
 # Example configuration:
 #
