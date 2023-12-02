@@ -246,6 +246,13 @@ bar {
 exec mako
 
 #
+# Screen grabs
+#
+bindsym Print exec ~/.config/sway/grab-display.sh
+bindsym Shift+Print exec ~/.config/sway/grab-window.sh
+bindsym $mod+Shift+s exec ~/.config/sway/grab-selection.sh
+
+#
 # Configure D-Bus for xdg-desktop-portal
 #
 exec dbus-update-activation-environment --systemd WAYLAND_DISPLAY XDG_CURRENT_DESKTOP=sway
