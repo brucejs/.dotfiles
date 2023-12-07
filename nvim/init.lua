@@ -95,6 +95,8 @@ vim.cmd([[
     highlight Normal ctermbg=none guibg=none
     highlight SignColumn ctermbg=none guibg=none
 
+    filetype indent off
+
     augroup configgroup
       autocmd!
       silent! autocmd! filetypedetect BufRead,BufNewFile *.tf
