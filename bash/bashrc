@@ -52,3 +52,6 @@ PATH=~/.local/bin:$GOPATH/bin:$PATH
 
 # Install Haskell toolchain
 [ -f "$HOME/.ghcup/env" ] && source "$HOME/.ghcup/env" # ghcup-env
+
+# Configure aws-cli autocompletion
+complete -C "$HOME/.local/bin/aws_completer" aws
