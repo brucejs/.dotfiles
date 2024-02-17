@@ -9,6 +9,10 @@
  '(org-agenda-files '("./tasks.org" "./calendar.org"))
  '(org-agenda-include-diary t)
  '(org-agenda-show-future-repeats nil)
+ '(org-capture-templates
+   '(("i" "Inbox" entry
+      (file org-default-notes-file)
+      "* %?")))
  '(org-deadline-warning-days 0)
  '(org-default-notes-file "./inbox.org")
  '(org-directory "~/Documents/Git/org")
