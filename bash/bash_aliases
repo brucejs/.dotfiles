@@ -1,6 +1,7 @@
 #
 # ~/.bash_aliases
 #
+alias cmt='echo "#######################################"'
 alias csv='column -ts,'
 alias fancy='date "+%A, %b %d, %Y"'
 alias g++='g++ -Wall -std=c++14'
