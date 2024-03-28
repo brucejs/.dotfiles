@@ -55,6 +55,9 @@ exec swayidle -w \
          timeout 610 'swaymsg "output * power off"' resume 'swaymsg "output * power on"' \
          before-sleep 'swaylock -f -c 002b36'
 
+# Adjust gamma for sunrise and sunset
+exec wlsunset -l 43.8 -L -88.8
+
 ### Input configuration
 #
 # Example configuration:
