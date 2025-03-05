@@ -3,3 +3,6 @@
 #
 
 [[ -f ~/.bashrc ]] && . ~/.bashrc
+
+# Install Rust toolchain
+. "$HOME/.cargo/env"

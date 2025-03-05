@@ -55,3 +55,6 @@ PATH=~/.local/bin:$GOPATH/bin:$PATH
 
 # Configure aws-cli autocompletion
 complete -C "$HOME/.local/bin/aws_completer" aws
+
+# Install Rust toolchain
+. "$HOME/.cargo/env"
