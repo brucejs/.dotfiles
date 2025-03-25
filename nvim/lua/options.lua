@@ -20,6 +20,7 @@ vim.cmd([[
     autocmd!
     au FileType gitcommit set colorcolumn+=51 textwidth=72
     " https://csswizardry.com/2017/03/configuring-git-and-vim/#update-2017-04-09
+    au FileType go set noexpandtab shiftwidth=4 softtabstop=4 tabstop=4 listchars=tab:\ \ ,trail:·,eol:¬
   augroup END
 
   " Sort the selected list of HTML anchor tags by their rendered text, not their href attribute
