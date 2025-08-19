@@ -36,16 +36,13 @@ if [ -f /usr/share/git/completion/git-prompt.sh ]; then
 fi
 
 # Configure GPG-AGENT
-GPG_TTY=$(tty)
-export GPG_TTY
+export GPG_TTY=$(tty)
 
  # Configure ssh-agent
-SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
-export SSH_AUTH_SOCK
+export SSH_AUTH_SOCK=$XDG_RUNTIME_DIR/ssh-agent.socket
 
 # Adjust GOPATH
-GOPATH=$HOME/.go
-export GOPATH
+export GOPATH=$HOME/.go
 
 # Add ~/.local/bin to PATH
 PATH=~/.local/bin:$GOPATH/bin:$PATH
